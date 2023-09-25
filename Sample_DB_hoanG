@@ -1,0 +1,134 @@
+-- Create Borrower table
+CREATE TABLE Borrower (
+  ID INT PRIMARY KEY,
+  Borrower VARCHAR(50),
+  Loan_ID VARCHAR(10)
+);
+
+-- Insert data into Borrower table
+INSERT INTO Borrower (ID, Borrower, Loan_ID) VALUES
+(1, 'John Smith', 'L1'),
+(2, 'Jane Doe', 'L2'),
+(3, 'Mark Johnson', 'L3'),
+(4, 'Emily Brown', 'L4'),
+(5, 'Michael Lee', 'L5'),
+(6, 'Sarah Wilson', 'L6'),
+(7, 'David Davis', 'L7'),
+(8, 'Olivia Turner', 'L8'),
+(9, 'Daniel Clark', 'L9'),
+(10, 'Emma Roberts', 'L10'),
+(11, 'Christopher Green', 'L11'),
+(12, 'Ava Martinez', 'L12'),
+(13, 'Benjamin Walker', 'L13'),
+(14, 'Sophia Hill', 'L14'),
+(15, 'Joshua Allen', 'L15'),
+(16, 'Mia Young', 'L16'),
+(17, 'Matthew Scott', 'L17'),
+(18, 'Isabella King', 'L18'),
+(19, 'William Rodriguez', 'L19'),
+(20, 'Amelia Carter', 'L20');
+
+-- Create Customer table
+CREATE TABLE Customer (
+  ID INT PRIMARY KEY,
+  Customer VARCHAR(50),
+  Branch VARCHAR(10)
+);
+
+-- Insert data into Customer table
+INSERT INTO Customer (ID, Customer, Branch) VALUES
+(1, 'John Smith', 'B1'),
+(2, 'Jane Doe', 'B2'),
+(3, 'Mark Johnson', 'B3'),
+(4, 'Emily Brown', 'B4'),
+(5, 'Michael Lee', 'B5'),
+(6, 'Sarah Wilson', 'B1'),
+(7, 'David Davis', 'B2'),
+(8, 'Olivia Turner', 'B3'),
+(9, 'Daniel Clark', 'B4'),
+(10, 'Emma Roberts', 'B5'),
+(11, 'Christopher Green', 'B1'),
+(12, 'Ava Martinez', 'B2'),
+(13, 'Benjamin Walker', 'B3'),
+(14, 'Sophia Hill', 'B4'),
+(15, 'Joshua Allen', 'B5'),
+(16, 'Mia Young', 'B1'),
+(17, 'Matthew Scott', 'B2'),
+(18, 'Isabella King', 'B3'),
+(19, 'William Rodriguez', 'B4'),
+(20, 'Amelia Carter', 'B5');
+
+-- Create Branch table
+CREATE TABLE Branch (
+  Branch VARCHAR(10) PRIMARY KEY,
+  Branch_Location VARCHAR(50),
+  Manager VARCHAR(50)
+);
+
+-- Insert data into Branch table
+INSERT INTO Branch (Branch, Branch_Location, Manager) VALUES
+('B1', 'New York', 'John'),
+('B2', 'Los Angeles', 'Jane'),
+('B3', 'Chicago', 'Mark'),
+('B4', 'Houston', 'Emily'),
+('B5', 'Miami', 'Michael');
+
+-- Create Account table
+CREATE TABLE Account (
+  ID INT PRIMARY KEY,
+  Account VARCHAR(10),
+  Balance DECIMAL(10, 2)
+);
+
+-- Insert data into Account table
+INSERT INTO Account (ID, Account, Balance) VALUES
+(1, 'A1', 1000),
+(2, 'A2', 5000),
+(3, 'A3', 2500),
+(4, 'A4', 3000),
+(5, 'A5', 20000),
+(6, 'A6', 1500),
+(7, 'A7', 7000),
+(8, 'A8', 1800),
+(9, 'A9', 10000),
+(10, 'A10', 4500),
+(11, 'A11', 6000),
+(12, 'A12', 3500),
+(13, 'A13', 9000),
+(14, 'A14', 1200),
+(15, 'A15', 8000),
+(16, 'A16', 4000),
+(17, 'A17', 5500),
+(18, 'A18', 2000),
+(19, 'A19', 9500),
+(20, 'A20', 3000);
+
+-- Create Loan table
+CREATE TABLE Loan (
+  ID INT PRIMARY KEY,
+  Loan_ID VARCHAR(10),
+  Loan_Amount DECIMAL(10, 2)
+);
+
+-- Insert data into Loan table
+INSERT INTO Loan (ID, Loan_ID, Loan_Amount) VALUES
+(1, 'L1', 5000),
+(2, 'L2', 10000),
+(3, 'L3', 7500),
+(4, 'L4', 3000),
+(5, 'L5', 20000),
+(6, 'L6', 1500),
+(7, 'L7', 7000),
+(8, 'L8', 1800),
+(9, 'L9', 10000),
+(10, 'L10', 4500),
+(11, 'L11', 6000),
+(12, 'L12', 3500),
+(13, 'L13', 9000),
+(14, 'L14', 1200),
+(15, 'L15', 8000),
+(16, 'L16', 4000),
+(17, 'L17', 5500),
+(18, 'L18', 2000),
+(19, 'L19', 9500),
+(20, 'L20', 3000);
